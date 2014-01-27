@@ -6,7 +6,7 @@ title: Category
   {% for category in site.categories %}
   <dt><h2 class="cat-tag">{{ category | first }}</h2></dt>
   <dd>
-    {{ category | last }}
+    {{ category }}
     <ul>
       {% for post in category | last %}
       <li><h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></li>
