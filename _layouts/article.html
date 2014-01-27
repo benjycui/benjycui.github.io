@@ -5,10 +5,11 @@ layout: global
   <header>
     <h2>{{ page.title }}</h2>
     <p class="post-meta">
-      <time>Time: 2014-1-27</time>
+      <time>Time: {{ post.date | date_to_string }}</time>
       &nbsp;&nbsp;&nbsp;Tags:
-      <a href="" class="tag">CSS</a>
-      <a href="" class="tag">Pure</a>
+      {% for tag in post.tags %}
+      <a href="" class="post-tag">{{ tag }}</a>
+      {% endfor %}
     </p>
   </header>
   {{ content }}
