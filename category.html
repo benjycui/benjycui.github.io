@@ -8,7 +8,7 @@ title: Category
   <dd>
     <ul>
       {% for post in category | last %}
-      <li><h3><a href="">{{ post.title }}</a></h3></li>
+      <li><h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></li>
       {% endfor %}
     </ul>
   </dd>
