@@ -1,27 +1,16 @@
 ---
 layout: global
-title: category
+title: Category
 ---
 <dl>
   {% for category in site.categories %}
-  <dt><h2 class="cat-tag">{{ category }}</h2></dt>
+  <dt><h2 class="cat-tag">{{ category | first }}</h2></dt>
+  <dd>
+    <ul>
+      {% for post in site.categories[category] %}
+      <li><h3><a href="">{{ post.title }}</a></h3></li>
+      {% endfor %}
+    </ul>
+  </dd>
   {% endfor %}
-
-  <dt><h2 class="cat-tag">Javascript</h2></dt>
-  <dd>
-    <ul>
-      <li><h3><a href="">123</a></h3></li>
-      <li><h3><a href="">123</a></h3></li>
-      <li><h3><a href="">123</a></h3></li>
-    </ul>
-  </dd>
-
-  <dt><h2 class="cat-tag">CSS</h2></dt>
-  <dd>
-    <ul>
-      <li><h3><a href="">123</a></h3></li>
-      <li><h3><a href="">123</a></h3></li>
-      <li><h3><a href="">123</a></h3></li>
-    </ul>
-  </dd>
 </dl>
