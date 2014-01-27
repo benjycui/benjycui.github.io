@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BenjyCui|{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" mce_href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" mce_href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+
+    <script src="{{ site.baseurl }}/scripts/html5shiv.min.js"></script>
+    <link href="{{ site.baseurl }}/styles/screen.min.css" rel="stylesheet"/>
+    <script src="{{ site.baseurl }}/scripts/respond.min.js"></script>
+  </head>
+  <body>
+    <!-- .pure-g -->
+    <div class="pure-g-r">
+      <!-- .sidebar -->
+      <div class="sidebar pure-u-1-4">
+        <header>
+          <hgroup class="hero">
+            <h1 class="hero-title">BenjyCui</h1>
+            <h2 class="hero-tagline">Cherish what you have gotten</h2>
+          </hgroup>
+          <nav>
+            <div class="pure-menu pure-menu-open pure-hidden-phone">
+              <ul>
+                <li><a href="{{ site.baseurl }}/index.html">Articles</a></li>
+                <li><a href="{{ site.baseurl }}/lab.html">Code Lab</a></li>
+                <li><a href="https://github.com/benjycui">GitHub</a></li>
+                <li><a href="{{ site.baseurl }}/rss.xml">RSS</a></li>
+              </ul>
+            </div>
+
+            <div class="pure-menu pure-menu-open pure-menu-horizontal pure-hidden-tablet pure-hidden-desktop">
+              <ul>
+                <li><a href="{{ site.baseurl }}/index.html">Articles</a></li>
+                <li><a href="{{ site.baseurl }}/lab.html">Code Lab</a></li>
+                <li><a href="{{ site.baseurl }}/rss.xml">RSS</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <!-- /.sidebar -->
+
+      <!-- .content -->
+      <div class="content pure-u-3-4">
+        {{ content }}
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.pure-g -->
+
+    <footer>
+      Powered by <a href="http://pages.github.com/">GitHub Pages</a> &amp; <a href="http://jekyllrb.com/">Jekyll
+    </footer>
+  </body>
+</html>

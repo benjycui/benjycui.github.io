@@ -1,0 +1,22 @@
+---
+layout: global
+title: Cherish What You Have Gotten
+---
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <section>
+      <header>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-meta">
+          <time>Time: {{ post.date | date_to_string }}</time>
+          &nbsp;&nbsp;&nbsp;Tags:
+          <a href="" class="tag">CSS</a>
+          <a href="" class="tag">Pure</a>
+        </p>
+      </header>
+      <p class="excerpt">{{ post.excerpt }}</p>
+    </section>
+  </li>
+  {% endfor %}
+</ul>
