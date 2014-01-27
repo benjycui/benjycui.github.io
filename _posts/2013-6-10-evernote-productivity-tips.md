@@ -1,7 +1,8 @@
 ---
 layout: article
 title: 使用印象笔记提高工作效率的10个技巧
-tags: productivity
+category:
+  - productivity
 ---
 
 发现了一篇不错的文章，所以就顺手把它翻译了过来。

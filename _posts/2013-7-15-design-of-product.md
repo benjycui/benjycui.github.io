@@ -1,7 +1,8 @@
 ---
 layout: article
 title: “好”设计的前提
-tags: product
+category:
+  - product
 ---
 
 今天买了一张竹席，然后发现它的包装设计过于强求美观，以至于忽略了用户体验。先看一下下面这张图：

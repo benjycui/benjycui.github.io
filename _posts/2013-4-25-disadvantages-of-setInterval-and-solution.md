@@ -1,7 +1,8 @@
 ---
 layout: article
 title: setInterval的不足，及解决方案
-tags: js
+category:
+  - js
 ---
 
 js的初学者可能会认为，setInterval/setTimeout会在预设的时间点上准时执行预设的函数。可事实上setInterval/setTimeout并不真的会在设定的时间到了后就立刻执行函数，它只是在设定的时间后, 把任务添加到js的待处理队列里。同时因为js是单线程的，所以只有当前没任务正在执行时, 新加入的任务才会立刻被执行。但是如果当前有任务在执行，那么新加入的任务就必须等待, 如果前面出现了死循环，那么后面的任务就不可能被执行了。
