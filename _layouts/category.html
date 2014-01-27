@@ -9,6 +9,7 @@ title: category
     <ul>
       {% for post in site.tags[tag] %}
       <li><h3><a href="">{{ post.title }}</a></h3></li>
+      {% endfor %}
     </ul>
   </dd>
   {% endfor %}
