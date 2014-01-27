@@ -1,13 +1,13 @@
 ---
 layout: global
-title: category
+title: Category
 ---
 <dl>
-  {% for tag in site.tags %}
-  <dt><h2 class="cat-tag">{{ tag }}</h2></dt>
+  {% for category in site.categories %}
+  <dt><h2 class="cat-tag">{{ category | first }}</h2></dt>
   <dd>
     <ul>
-      {% for post in site.tags[tag] %}
+      {% for post in site.categories[category] %}
       <li><h3><a href="">{{ post.title }}</a></h3></li>
       {% endfor %}
     </ul>
