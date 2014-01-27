@@ -6,10 +6,11 @@ title: Category
   {% for category in site.categories %}
   <dt><h2 class="cat-tag">{{ category | first }}</h2></dt>
   <dd>
-    {{ category }}
     <ul>
-      {% for post in category | last %}
+      {% for posts in category %}
+      {% for post in posts %}
       <li><h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></li>
+      {% endfor %}
       {% endfor %}
     </ul>
   </dd>
