@@ -1,8 +1,7 @@
 ---
 layout: article
 title: 自调用函数及其应用
-category:
-  - js
+category: js
 ---
 
 js函数一个有趣的技巧，就是在定义完一个函数后，立刻对其进行调用。也就是所谓的自调用函数。
