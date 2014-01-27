@@ -1,7 +1,6 @@
 ---
 layout: article
 title: 关于浏览器input控件的几个陷阱
-tags: browser
 ---
 
 表单是web应用最主要的收集用户信息的方式，而其中，input控件用得最多，可是关于input的陷阱你又知道多少?
