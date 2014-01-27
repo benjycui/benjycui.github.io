@@ -7,6 +7,9 @@ layout: global
     <p class="post-meta">
       <time>Time: {{ page.date | date_to_string }}</time>
       &nbsp;&nbsp;&nbsp;Tags:
+      {% for tag in page.tags %}
+      <a href="" class="post-tag">{{ tag }}</a>
+      {% endfor %}
     </p>
   </header>
   {{ content }}
