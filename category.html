@@ -4,7 +4,7 @@ title: Category
 ---
 <dl>
   {% for category in site.categories %}
-  <dt><h2 class="cat-tag">{{ category | first }}</h2></dt>
+  <dt><h2 id="{{ category | first }}" class="cat-tag">{{ category | first }}</h2></dt>
   <dd>
     <ul>
       {% for posts in category %}

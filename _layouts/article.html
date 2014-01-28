@@ -8,7 +8,7 @@ layout: global
       <time>Time: {{ page.date | date_to_string }}</time>
       &nbsp;&nbsp;&nbsp;Tags:
       {% for tag in page.categories %}
-      <a href="" class="post-tag">{{ tag }}</a>
+      <a href="{{ site.baseurl }}category.html#{{ tag }}" class="post-tag">{{ tag }}</a>
       {% endfor %}
     </p>
   </header>
