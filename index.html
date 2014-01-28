@@ -12,7 +12,7 @@ title: Cherish What You Have Gotten
           <time>Time: {{ post.date | date_to_string }}</time>
           &nbsp;&nbsp;&nbsp;Tags:
           {% for tag in post.categories %}
-          <a href="{{ site.baseurl }}category.html#{{ tag }}" class="post-tag">{{ tag }}</a>
+          <a href="{{ site.baseurl }}/category.html#{{ tag }}" class="post-tag">{{ tag }}</a>
           {% endfor %}
         </p>
       </header>
