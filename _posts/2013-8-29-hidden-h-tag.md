@@ -8,23 +8,23 @@ category: html
 
 本文所举的例子，就是web标准的制定者<a href="http://www.w3.org/">W3C的官网</a>。虽然W3C官网的语义不一定是最好的，但是也是属于比较好的一批，所以也具有一定的参考价值。接下来本文将会介绍W3C官网所使用的两个语义化技巧--包裹logo的h1标签与隐藏的h标签。
 
-1.包裹logo的h1标签
+## 1. 包裹logo的h1标签
 
 每个页面都需要且只需要一个h1标签，并且h1标签的地位和title标签是相近的。那么，我们该如何使用这个h1标签呢？W3C给我们的答案是：logo是个不错的选择。
 
-<img src="{{ site.baseurl }}/images/hidden-h-tag-1.png" alt="W3C logo的源码">
+<img src="{{ site.baseurl }}upload/images/hidden-h-tag-1.png" alt="W3C logo的源码">
 
 因为每个页面都会有且只有一个logo，并且logo是起到标识网站的作用，而这个需求与h1的语义是相近的，所以W3C使用h1去包裹logo。
 
-2.隐藏的h标签
+## 2. 隐藏的h标签
 
 查看W3C官网源码的时候，你会发现有几个h标签添加了offscreen类，并且这几个标签并没有在可视区域出现。这几个标签就是我们今天要讨论的“隐藏的h标签”。
 
-<img src="{{ site.baseurl }}/images/hidden-h-tag-2.png" alt="W3C footer的源码">
+<img src="{{ site.baseurl }}upload/images/hidden-h-tag-2.png" alt="W3C footer的源码">
 
 那我们为什么要使用隐藏的标签呢？我们先看一下W3C的footer，有三个栏目，分别是NAVIGATION、CONTACT W3C和W3C UPDATES，为了语义化，这三个栏目名称应该使用何种标签呢？我们大部分人都会选择h标签，可是又是哪个等级的h标签呢？
 
-<img src="{{ site.baseurl }}/images/hidden-h-tag-3.png" alt="W3C footer">
+<img src="{{ site.baseurl }}upload/images/hidden-h-tag-3.png" alt="W3C footer">
 
 如果我们没有把logo包裹进h1标签，那么网站原来是没有h1标签的，按照h标签必须从h1开始的原则，那么这几个栏目名就只能用h1标签了，而一个页面有多个h1标签并不妥，并且这几个栏目名也不至于需要用到h1标签。所以一开始就为页面设置一个h1标签会更加的合理。
 
@@ -32,7 +32,7 @@ category: html
 
 除了能降低栏目h标签的等级，隐藏的h标签还有另外一个用途：在生成大纲时能够标识一个模块。
 
-<img src="{{ site.baseurl }}/images/hidden-h-tag-4.png" alt="W3C document outline">
+<img src="{{ site.baseurl }}upload/images/hidden-h-tag-4.png" alt="W3C document outline">
 
 我们并没有在可视区域看到News标题，可是它的大纲却显示了News这么一个标题，就是因为使用了隐藏的h标签。所以我们也可以使用隐藏的h标签创建一个更加合理的大纲结构。
 
