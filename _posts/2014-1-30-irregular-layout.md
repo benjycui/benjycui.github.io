@@ -27,7 +27,7 @@ categories: [css, js]
 ### 代码分析
 
 jade源码：
-{% highlight jade %}
+{% highlight html %}
 doctype
 html
   head
@@ -49,7 +49,7 @@ html
 {% endhighlight%}
 
 less源码：
-{% highlight less %}
+{% highlight css %}
 // 照片墙上的格子
 li {
     border-bottom: 1px solid #8f8c8b;
