@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 不规则照片墙
-category:
+categories:
   - css
   - js
 ---
