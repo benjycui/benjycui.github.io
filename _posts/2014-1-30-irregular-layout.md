@@ -1,9 +1,7 @@
 ---
 layout: article
 title: 不规则照片墙
-categories:
-  - css
-  - js
+categories: [css, js]
 ---
 在最近的一个项目中，被迫实现了不规则照片墙的效果T^T。经过努力，终于实现了设计师的要求，方法虽然简单，但是实用，所以决定整理出来与各位分享一下:)。
 
