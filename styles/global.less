@@ -1,0 +1,163 @@
+// Benjy's reset
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+input, textarea {
+    outline: 0;
+}
+
+
+// To fix IE6 && IE7 stupid default style
+html{
+    *overflow-y:scroll;
+    *overflow-x:visible;
+    _overflow-x:hidden;
+}
+
+
+// Global start
+body {
+    margin: 0 auto;
+    max-width: 45 / .6em;
+    min-width: 480px;
+}
+
+.col {
+    margin: 2em;
+    padding: 0;
+}
+.sidebar header {
+    &:extend(.col);
+}
+
+.article-list {
+    &:extend(.jhenghei);
+
+    li {
+        list-style: none;
+    }
+}
+nav {
+    div {
+        border: 0!important;
+        margin-top: 1em;
+    }
+
+    li {
+        &:hover {
+            background-color: none!important;
+        }
+    }
+}
+
+.omnes {
+    font-family: "omnes-pro", "sans-serif";
+}
+.jhenghei {
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", "sans-serif";
+}
+.hero {
+    margin: 0;
+    font-weight: 100;
+}
+.hero-title {
+    &:extend(.hero);
+    &:extend(.omnes);
+    color: @brand-primary;
+}
+.hero-tagline {
+    &:extend(.hero);
+    &:extend(.omnes);
+    color: @black-60;
+}
+
+footer {
+    &:extend(.omnes);
+    margin: 1em 2em;
+
+    a {
+        color: @brand-primary;
+    }
+}
+
+@media (min-width: 768px) {
+    @content-width: 3 / 4 * 100%;
+    .sidebar {
+        position: relative;
+
+        header {
+            position: fixed;
+            right: @content-width;
+            text-align: right;
+            width: 1 / 5 * 100%;;
+        }
+
+        ul {
+            float: right;
+            width: 104px;
+        }
+    }
+    .hero-title {
+        font-size: 4em;
+    }
+    .hero-tagline {
+        font-size: 2em;
+    }
+
+    footer {
+        position: fixed;
+        right: @content-width;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        header {
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+    .hero-title {
+        font-size: 3em;
+    }
+    .hero-tagline {
+        font-size: 1.5em;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+.tag {
+    &:extend(.omnes);
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background-color: @brand-success;
+}
+
+@title-color: @black-70;
+h2 {
+    font-size: 2em;
+
+    a {
+        color: @title-color;
+    }
+}
+.post-meta {
+    color: @black-40;
+    font-size: .9em;
+}
+.post-tag {
+    &:extend(.tag);
+}
+p {
+    color: darken(#fff, 55%);
+    text-align: justify;
+}

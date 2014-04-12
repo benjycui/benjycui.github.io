@@ -1,7 +1,1 @@
 node_modules
-*.coffee
-*.less
-Gruntfile.coffee
-package.json
-.jshintrc
-_draft

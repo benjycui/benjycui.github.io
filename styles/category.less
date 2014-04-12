@@ -1,0 +1,30 @@
+dl {
+    &:extend(.col);
+}
+dd {
+    margin: 0 0 3em;
+}
+
+@-webkit-keyframes target {
+    from { background-color: @brand-warning; }
+    to { background-color: @brand-success; }
+}
+@keyframes target {
+    from { background-color: @brand-warning; }
+    to { background-color: @brand-success; }
+}
+
+.cat-tag {
+    &:extend(.tag);
+    display: inline;
+    font-size: 1em;
+
+    &:target {
+        -webkit-animation: target 3s linear;
+        animation: target 3s linear;
+    }
+}
+
+h3 a {
+    color: @title-color;
+}
