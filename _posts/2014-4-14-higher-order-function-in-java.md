@@ -68,6 +68,8 @@ greet.call("world"); // "Hello, world!"
 
 所以发现错误后不要喷我XD，不过你们能提供反馈的话，我将很乐意改进。
 
+[示例代码下载](/upload/code/higher-order-function-in-java.zip)
+
 ### 几个栗子...
 接下来我会用上面的技巧把一些在函数式编程语言中常用的函数引入到Java中，同时向你们展示高阶函数的灵活性。
 
@@ -273,5 +275,3 @@ memVerySlowComputation.call(2); // Why do you call me?2
   2. 用于模拟高阶函数的代码占了相当的篇幅，如果在原生支持高阶函数的语言内，如Python、Lisp，就能省去这一部份代码了。
 
 * 这东西有什么用。要我说啊，真的没什么用。就像[BicaVm](https://github.com/nurv/BicaVM)一样，居然有人用Javascript去写JVM，这有什么用，性能也太差了吧！不过如果你还记得文章开头所说的：Lisp已经极大的改变了我对编程的看法。而这就是我要和你分享的想法：编程能力不是由你所用的语言决定的，而是你的思维。然后顺带宣传一下我热爱的函数式编程而已。
-
-[示例代码下载](/upload/code/higher-order-function-in-java.zip)

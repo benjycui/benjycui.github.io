@@ -9,6 +9,8 @@ categories: [css, js]
 
 ![最终效果图](/upload/images/irregular-layout-1.jpg)
 
+[示例代码下载](/upload/code/irregular-layout-example.zip)
+
 ### 分析设计稿
 
 拿到设计稿后发现：
@@ -161,5 +163,3 @@ $(document).ready(function () {
   });
 });
 {% endhighlight%}
-
-[示例代码下载](/upload/code/irregular-layout-example.zip)
