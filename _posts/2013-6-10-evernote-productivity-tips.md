@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 使用印象笔记提高工作效率的10个技巧
-category: productivity
+categories: [productivity, translation]
 ---
 
 发现了一篇不错的文章，所以就顺手把它翻译了过来。英文原文：http://evernote.com/community/guides/JoshuaZerkel_Evernote_ProductivityTips.pdf

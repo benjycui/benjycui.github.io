@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 在Java中模拟高阶函数
-category: java
+categories: [java, FP]
 ---
 
 我从大二开始接触Lisp，到现在差不多一年半了。期间断断续续的学习了Common Lisp、Emacs Lisp、和Clojure。惭愧的是，到现在，都还没用Lisp做过一个像样的项目。不过，就如Eric S. Raymond所说：“Lisp很值得学习。你掌握它以后，会感受到它带来的极大启发。这会大大提高你的编程水平，使你成为一名更好的程序员，即使你在实际工作中很少用到Lisp。”
