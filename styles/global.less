@@ -67,7 +67,11 @@ nav {
 .hero-title {
     &:extend(.hero);
     &:extend(.omnes);
-    color: @brand-primary;
+
+    a {
+        color: @brand-primary;
+        text-decoration: none;
+    }
 }
 .hero-tagline {
     &:extend(.hero);
