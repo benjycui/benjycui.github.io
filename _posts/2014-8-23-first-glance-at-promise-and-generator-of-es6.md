@@ -164,7 +164,7 @@ Generator的执行流：
 ![Generator的执行流](/upload/images/yield-in-generator-function.png)
 
 #### 两个例外
-1. 第一次it.next()传入的值会被扔掉，而非作为yield的返回值，如下：
+1.第一次it.next()传入的值会被扔掉，而非作为yield的返回值，如下：
 {% highlight javascript %}
 function *example () {
   var x = yield "Something";
@@ -176,7 +176,7 @@ it.next(1);
 it.next(2);
 {% endhighlight%}
 
-2. 最后一次调用it.next()时value的值是return后面的值，而非yield后面的值（因为已经没有yield expression了），如下：
+2.最后一次调用it.next()时value的值是return后面的值，而非yield后面的值（因为已经没有yield expression了），如下：
 {% highlight javascript %}
 function *example () {
   yield "Something";
