@@ -7,7 +7,7 @@ category: js
 在最近的一个项目中，nodejs端使用了[Koa](http://koajs.com/)，然后因为自己一向有看源码的习惯，所以把Koa的源码也稍微分析了一下，并整理了各部份之间的关系，以下是对这次学习的梳理。
 
 ### 简介
-官方给Koa的定义是*next generation web framework for node.js*，而能充分体现**next generation**的莫过于Koa对ES6 Generator Function的**极致**使用。首先Koa强依赖于[co](https://github.com/visionmedia/co) -- 一个基于Generator Function与Yieldables以允许用户编写顺序风格异步代码的库（囧~好拗口，语言能力差呐……），同时它的所有的Middleware本质上都是一个Generator Function，最后，Koa Middleware之间的调用是通过Generator Function内部才能使用的Yield Expression。所以要理解Koa就必须先了解Generator Function，对于不知道什么是Generator Function的同学，建议先阅读[《Generator 函数》](http://es6.ruanyifeng.com/#docs/generator)和[《初探ES6 -- Promise与Generator》](http://benjycui.com/js/2014/08/23/first-glance-at-promise-and-generator-of-es6.html)。
+官方给Koa的定义是 *next generation web framework for node.js* ，而能充分体现 **next generation** 的莫过于Koa对ES6 Generator Function的**极致**使用。首先Koa强依赖于[co](https://github.com/visionmedia/co) -- 一个基于Generator Function与Yieldables以允许用户编写顺序风格异步代码的库（囧~好拗口，语言能力差呐……），同时它的所有的Middleware本质上都是一个Generator Function，最后，Koa Middleware之间的调用是通过Generator Function内部才能使用的Yield Expression。所以要理解Koa就必须先了解Generator Function，对于不知道什么是Generator Function的同学，建议先阅读[《Generator 函数》](http://es6.ruanyifeng.com/#docs/generator)和[《初探ES6 -- Promise与Generator》](http://benjycui.com/js/2014/08/23/first-glance-at-promise-and-generator-of-es6.html)。
 
 ### 结构分析
 Koa由以下四个模块组成 -- 当然，也使用了一些外部模块如co，[koa-compose](https://github.com/koajs/compose)。
