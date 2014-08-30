@@ -12,7 +12,7 @@ category: js
 ### 结构分析
 Koa由以下四个模块组成 -- 当然，也使用了一些外部模块如co，[koa-compose](https://github.com/koajs/compose)。
 
-{% highlight bash %}
+{% highlight shell %}
 /lib
 ├── application.js
 ├── context.js
