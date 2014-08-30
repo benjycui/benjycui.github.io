@@ -156,14 +156,15 @@ it.next(2); // 把 2 传入。
 为了方便理解，可以把"yield blabla;"类比为nodejs的异步IO调用，可以对比下图与下下图。
 
 nodejs异步IO：
+
 ![nodejs异步IO](/upload/images/async-io-of-nodejs.png)
 
 Generator的执行流：
+
 ![Generator的执行流](/upload/images/yield-in-generator-function.png)
 
 #### 两个例外
-1. 第一次it.next()传入的值会被扔掉，而非作为yield的返回值，如下：
-
+1.第一次it.next()传入的值会被扔掉，而非作为yield的返回值，如下：
 {% highlight javascript %}
 function *example () {
   var x = yield "Something";
@@ -175,8 +176,7 @@ it.next(1);
 it.next(2);
 {% endhighlight%}
 
-2. 最后一次调用it.next()时value的值是return后面的值，而非yield后面的值（因为已经没有yield expression了），如下：
-
+2.最后一次调用it.next()时value的值是return后面的值，而非yield后面的值（因为已经没有yield expression了），如下：
 {% highlight javascript %}
 function *example () {
   yield "Something";
